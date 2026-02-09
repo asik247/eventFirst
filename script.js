@@ -56,3 +56,17 @@ tagBtn.addEventListener("click",function(e){
         console.log("btn click");
     }
 })
+
+
+// Update 
+let updateBtn = document.getElementById("updateBtn");
+updateBtn.addEventListener("click",()=>{
+    // console.log("up btn clicked");
+    let inputBox = document.getElementById("inputBox");
+    // console.log(inputBox.value);
+    let para = document.getElementById("para");
+    // console.log(para);
+    para.innerText = inputBox.value;
+    para.appendChild(inputBox)
+    inputBox.value = ""
+})
