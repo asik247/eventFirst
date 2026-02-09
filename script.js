@@ -67,6 +67,6 @@ updateBtn.addEventListener("click",()=>{
     let para = document.getElementById("para");
     // console.log(para);
     para.innerText = inputBox.value;
-    para.appendChild(inputBox)
+    // para.appendChild(inputBox)
     inputBox.value = ""
 })
