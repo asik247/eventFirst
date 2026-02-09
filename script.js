@@ -15,3 +15,15 @@ let arrowBtn = document.getElementById("arrowBtn");
 arrowBtn.addEventListener("click",()=>{
     console.log("arrow function clicked!");
 })
+
+// Multiple event on same btn code here now;
+let multBtn = document.getElementById("multBtn");
+multBtn.addEventListener("click",()=>{
+    console.log("multbtn clicked");
+})
+multBtn.addEventListener("mouseover",()=>{
+    console.log("mouseover clicked");
+})
+multBtn.addEventListener("mouseout",()=>{
+    console.log("mouse out btn clicked");
+})
