@@ -41,6 +41,18 @@ let buttons = document.querySelectorAll(".btn");
 buttons.forEach(ele=>{
     // console.log(ele);
     ele.addEventListener("click",function(e){
-        console.log(e.target.innerText);
+        // console.log(e.target.innerText);
+        e.target.style.backgroundColor = 'red'
     })
+})
+
+// btn and span;
+let tagBtn = document.getElementById("tagBtn");
+tagBtn.addEventListener("click",function(e){
+    // console.log("btn clicked",e.target);
+    if(e.target.tagName === "SPAN"){
+        console.log("span btn clicked");
+    }else if(e.target.tagName === "BUTTON"){
+        console.log("btn click");
+    }
 })
