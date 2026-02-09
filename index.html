@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event First</title>
-    <!-- css add -->
-     <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Event First</title>
+   <!-- css add -->
+   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1 id="head" >Event first code here now:</h1>
-<button onclick="load()">loading</button>
-<!-- btn click korle fun run hobe -->
- <button onclick="showMessage()">clicked</button>
- <!-- click korel btn text red hobe -->
-  <button onclick="this.style.color='red'">This is btn here</button>
-  <button onclick="this.style.display='none'">click and hidbtn</button>
-  <!-- modern js way arrow funk -->
+   <h1 id="head">Event first code here now:</h1>
+   <button onclick="load()">loading</button>
+   <!-- btn click korle fun run hobe -->
+   <button onclick="showMessage()">clicked</button>
+   <!-- click korel btn text red hobe -->
+   <button onclick="this.style.color='red'">This is btn here</button>
+   <button onclick="this.style.display='none'">click and hidbtn</button>
+   <!-- modern js way arrow funk -->
    <button id="arrowBtn">arrowBtn</button>
- <!-- Multiple event on same btn code here now -->
-  <button id="multBtn">Multiple Worded!</button>
-  <!-- Toggle clase code now; -->
+   <!-- Multiple event on same btn code here now -->
+   <button id="multBtn">Multiple Worded!</button>
+   <!-- Toggle clase code now; -->
    <button id="toggleBtn">Toggle Class</button>
    <!-- event target code start now; -->
-    <button class="btn">one</button><button class="btn">two</button><button class="btn">three</button>
+   <button class="btn">one</button><button class="btn">two</button><button class="btn">three</button>
 
-    <!-- btn and span code -->
-     <button id="tagBtn">Click <span>Me</span></button> <br> <br> <br>
+   <!-- btn and span code -->
+   <button id="tagBtn">Click <span>Me</span></button> <br> <br> <br>
 
-     <!-- update btn -->
-      <p id="para">No Name</p>
-      <input id="inputBox" type="text" placeholder="Your name">
-      <button id="updateBtn">Update</button>
+   <!-- update btn -->
+   <p id="para">No Name</p>
+   <input id="inputBox" type="text" placeholder="Your name">
+   <button id="updateBtn">Update</button>
 
-    <!-- All Comments here --> <br><br><br><br>
-     <section id="sectionComments">
-        <h1>This is a title</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, illum?</p> <br>
-        <button>explore more</button>
-     </section>
+   <!-- All Comments here --> <br><br><br><br>
 
-    <!-- js added -->
-   <script src="script.js"></script> 
+      <div id="sectionComments">
+         <!-- <h1>This is a title</h1> -->
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, illum?</p> <br>
+        </div>
+         <!-- <button>explore more</button> -->
+      </div>
+   <br>
+   <textarea name="" id="textArea"></textarea><br>
+   <button id="commentBtn">Post comments</button>
+
+   <!-- js added -->
+   <script src="script.js"></script>
 </body>
+
 </html>

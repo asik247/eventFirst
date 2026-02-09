@@ -70,3 +70,20 @@ updateBtn.addEventListener("click",()=>{
     // para.appendChild(inputBox)
     inputBox.value = ""
 })
+// All comments code start now;
+let commentBtn = document.getElementById("commentBtn");
+commentBtn.addEventListener("click",()=>{
+    // console.log("commentBtn clicked");
+    let textArea = document.getElementById("textArea");
+    // console.log();
+    let textAreaValue = textArea.value
+    // console.log(textAreaValue);
+    let sectionComments = document.getElementById("sectionComments");
+    // console.log(sectionComments);
+    let creatDiv = document.createElement("div");
+    creatDiv.classList.add("style")
+    let createPara = document.createElement("p");
+    creatDiv.appendChild(createPara)
+    createPara.innerText = textAreaValue;
+    sectionComments.appendChild(creatDiv)
+})
