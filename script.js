@@ -1,46 +1,46 @@
 console.log("hello event");
-let load = ()=>{
+let load = () => {
     // let head = document.getElementById("head");
     // head.style.color = 'red'
     // alert("loading..........")
     document.body.style.backgroundColor = 'black'
 }
 // btn click korle funk run hobe
-let showMessage = ()=>{
-    
+let showMessage = () => {
+
     alert("button clicked!")
 }
 // Arrow funk btn clicked code hre now;
 let arrowBtn = document.getElementById("arrowBtn");
-arrowBtn.addEventListener("click",()=>{
+arrowBtn.addEventListener("click", () => {
     console.log("arrow function clicked!");
 })
 
 // Multiple event on same btn code here now;
 let multBtn = document.getElementById("multBtn");
-multBtn.addEventListener("click",()=>{
+multBtn.addEventListener("click", () => {
     console.log("multbtn clicked");
 })
-multBtn.addEventListener("mouseover",()=>{
+multBtn.addEventListener("mouseover", () => {
     console.log("mouseover clicked");
 })
-multBtn.addEventListener("mouseout",()=>{
+multBtn.addEventListener("mouseout", () => {
     console.log("mouse out btn clicked");
 })
 // Toggle clase code here now;
 let toggleBtn = document.getElementById("toggleBtn");
-toggleBtn.addEventListener("click",()=>{
+toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark")
 })
-toggleBtn.addEventListener("click",(e)=>{
+toggleBtn.addEventListener("click", (e) => {
     console.log(e.target.innerText);
 })
 // event target code start now;
 let buttons = document.querySelectorAll(".btn");
 // console.log(buttons);
-buttons.forEach(ele=>{
+buttons.forEach(ele => {
     // console.log(ele);
-    ele.addEventListener("click",function(e){
+    ele.addEventListener("click", function (e) {
         // console.log(e.target.innerText);
         e.target.style.backgroundColor = 'red'
     })
@@ -48,11 +48,11 @@ buttons.forEach(ele=>{
 
 // btn and span;
 let tagBtn = document.getElementById("tagBtn");
-tagBtn.addEventListener("click",function(e){
+tagBtn.addEventListener("click", function (e) {
     // console.log("btn clicked",e.target);
-    if(e.target.tagName === "SPAN"){
+    if (e.target.tagName === "SPAN") {
         console.log("span btn clicked");
-    }else if(e.target.tagName === "BUTTON"){
+    } else if (e.target.tagName === "BUTTON") {
         console.log("btn click");
     }
 })
@@ -60,7 +60,7 @@ tagBtn.addEventListener("click",function(e){
 
 // Update 
 let updateBtn = document.getElementById("updateBtn");
-updateBtn.addEventListener("click",()=>{
+updateBtn.addEventListener("click", () => {
     // console.log("up btn clicked");
     let inputBox = document.getElementById("inputBox");
     // console.log(inputBox.value);
@@ -72,7 +72,7 @@ updateBtn.addEventListener("click",()=>{
 })
 // All comments code start now;
 let commentBtn = document.getElementById("commentBtn");
-commentBtn.addEventListener("click",()=>{
+commentBtn.addEventListener("click", () => {
     // console.log("commentBtn clicked");
     let textArea = document.getElementById("textArea");
     // console.log();
@@ -89,32 +89,47 @@ commentBtn.addEventListener("click",()=>{
 })
 
 // Keyboard event code start;
-document.addEventListener("keydown",(e)=>{
+document.addEventListener("keydown", (e) => {
     // console.log("press",e.key);
 })
-document.addEventListener("keyup",(e)=>{
+document.addEventListener("keyup", (e) => {
     // console.log("press",e.key);
 })
-document.addEventListener("keypress",(e)=>{
+document.addEventListener("keypress", (e) => {
     // console.log("press",e.key);
 })
 
 // Wndow events;
-window.addEventListener("scroll",()=>{
-    console.log("Scrolling............");
+window.addEventListener("scroll", () => {
+    // console.log("Scrolling............");
 })
 
 // github repo delete system;
 let deleteBtn = document.getElementById("deleteBtn");
 let msg = document.getElementById("msg");
-deleteBtn.addEventListener("click",()=>{
+deleteBtn.addEventListener("click", () => {
     // console.log("git hub repo delete");
     let confirmDelete = confirm("Are you sure to delete?")
-    if(confirmDelete){
+    if (confirmDelete) {
         msg.innerText = "Deleted successfully";
         msg.style.color = 'red'
-    }else{
+    } else {
         msg.innerText = "Delete cancelled";
         msg.style.color = "green"
     }
+})
+// My secret info;
+let inputFeild = document.getElementById("inputFeild");
+inputFeild.addEventListener("keyup", (e) => {
+    const text = e.target.value;
+    let deleteBtn2 = document.getElementById("deleteBtn2");
+    // console.log(value);
+    if (text === "delete") {
+        deleteBtn2.removeAttribute("disabled")
+        // console.log("match delete");
+    } else {
+        // console.log("anythik else");
+        deleteBtn2.setAttribute("disabled", true)
+    }
+    // console.log("write",e.target.value);
 })
