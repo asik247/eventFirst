@@ -87,3 +87,16 @@ commentBtn.addEventListener("click",()=>{
     createPara.innerText = textAreaValue;
     sectionComments.appendChild(creatDiv)
 })
+
+// Keyboard event code start;
+document.addEventListener("keydown",(e)=>{
+    // console.log("press",e.key);
+})
+document.addEventListener("keyup",(e)=>{
+    // console.log("press",e.key);
+})
+document.addEventListener("keypress",(e)=>{
+    // console.log("press",e.key);
+})
+
+
