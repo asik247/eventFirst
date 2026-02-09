@@ -27,3 +27,8 @@ multBtn.addEventListener("mouseover",()=>{
 multBtn.addEventListener("mouseout",()=>{
     console.log("mouse out btn clicked");
 })
+// Toggle clase code here now;
+let toggleBtn = document.getElementById("toggleBtn");
+toggleBtn.addEventListener("click",()=>{
+    document.body.classList.toggle("dark")
+})
