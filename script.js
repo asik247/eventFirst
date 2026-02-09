@@ -99,4 +99,22 @@ document.addEventListener("keypress",(e)=>{
     // console.log("press",e.key);
 })
 
+// Wndow events;
+window.addEventListener("scroll",()=>{
+    console.log("Scrolling............");
+})
 
+// github repo delete system;
+let deleteBtn = document.getElementById("deleteBtn");
+let msg = document.getElementById("msg");
+deleteBtn.addEventListener("click",()=>{
+    // console.log("git hub repo delete");
+    let confirmDelete = confirm("Are you sure to delete?")
+    if(confirmDelete){
+        msg.innerText = "Deleted successfully";
+        msg.style.color = 'red'
+    }else{
+        msg.innerText = "Delete cancelled";
+        msg.style.color = "green"
+    }
+})
