@@ -32,3 +32,15 @@ let toggleBtn = document.getElementById("toggleBtn");
 toggleBtn.addEventListener("click",()=>{
     document.body.classList.toggle("dark")
 })
+toggleBtn.addEventListener("click",(e)=>{
+    console.log(e.target.innerText);
+})
+// event target code start now;
+let buttons = document.querySelectorAll(".btn");
+// console.log(buttons);
+buttons.forEach(ele=>{
+    // console.log(ele);
+    ele.addEventListener("click",function(e){
+        console.log(e.target.innerText);
+    })
+})
