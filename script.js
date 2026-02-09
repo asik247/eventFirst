@@ -133,3 +133,9 @@ inputFeild.addEventListener("keyup", (e) => {
     }
     // console.log("write",e.target.value);
 })
+let deleteBtn2 = document.getElementById("deleteBtn2");
+deleteBtn2.addEventListener("click", () => {
+    // console.log("del2 cl");
+    let inputFeild = document.getElementById("inputFeild");
+    inputFeild.value = '';
+})
