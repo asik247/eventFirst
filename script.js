@@ -176,3 +176,4 @@ delete25.addEventListener("click",function(){
 card.addEventListener("click",function(){
     console.log("card opened");
 })
+// Task for give me chatgtp:
