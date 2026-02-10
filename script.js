@@ -177,3 +177,10 @@ card.addEventListener("click",function(){
     console.log("card opened");
 })
 // Task for give me chatgtp:
+let parent = document.getElementById("parent");
+parent.addEventListener("click",function(e){
+    console.log(e.target);
+    if(e.target.tagName === "BUTTON"){
+        console.log(e.target.innerText + " Clicked");
+    }
+})
