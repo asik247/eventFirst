@@ -154,6 +154,17 @@ let sectionMian = document.getElementById("sectionMian");
 sectionMian.addEventListener("click",()=>{
     console.log("sectionMian btn clicked");
 })
-document.body.addEventListener("click",function(){
-    console.log("parent here clicked");
+// document.body.addEventListener("click",function(){
+//     console.log("parent here clicked");
+// })
+
+// Real life using bupple and stop propragration;
+let delete25 = document.getElementById("delete25");
+let card = document.getElementById("card");
+delete25.addEventListener("click",function(e){
+    e.stopPropagation()
+    console.log("Item deleted");
+})
+card.addEventListener("click",function(){
+    console.log("card opened");
 })
