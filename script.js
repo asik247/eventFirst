@@ -45,7 +45,6 @@ buttons.forEach(ele => {
         e.target.style.backgroundColor = 'red'
     })
 })
-
 // btn and span;
 let tagBtn = document.getElementById("tagBtn");
 tagBtn.addEventListener("click", function (e) {
@@ -56,8 +55,6 @@ tagBtn.addEventListener("click", function (e) {
         console.log("btn click");
     }
 })
-
-
 // Update 
 let updateBtn = document.getElementById("updateBtn");
 updateBtn.addEventListener("click", () => {
@@ -87,7 +84,6 @@ commentBtn.addEventListener("click", () => {
     createPara.innerText = textAreaValue;
     sectionComments.appendChild(creatDiv)
 })
-
 // Keyboard event code start;
 document.addEventListener("keydown", (e) => {
     // console.log("press",e.key);
@@ -121,7 +117,7 @@ deleteBtn.addEventListener("click", () => {
 // My secret info;
 let inputFeild = document.getElementById("inputFeild");
 inputFeild.addEventListener("keyup", (e) => {
-    const text = e.target.value;
+    const text = e.target.value;  
     let deleteBtn2 = document.getElementById("deleteBtn2");
     // console.log(value);
     if (text === "delete") {
@@ -143,12 +139,21 @@ deleteBtn2.addEventListener("click", () => {
 let main = document.getElementById("main");
 let child = document.getElementById("child");
 let btn = document.getElementById("btn");
-main.addEventListener("click",()=>{
-    console.log("main clicked");
-})
-child.addEventListener("click",()=>{
-    console.log("child btn clicked");
-})
+
+// child.addEventListener("click",()=>{
+//     console.log("child btn clicked");
+// })
 btn.addEventListener("click",()=>{
     console.log(" btn clicked");
+})
+main.addEventListener("click",(e)=>{
+    e.stopPropagation()
+    console.log("main clicked");
+})
+let sectionMian = document.getElementById("sectionMian");
+sectionMian.addEventListener("click",()=>{
+    console.log("sectionMian btn clicked");
+})
+document.body.addEventListener("click",function(){
+    console.log("parent here clicked");
 })
