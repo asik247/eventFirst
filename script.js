@@ -184,8 +184,8 @@ let parent = document.getElementById("parent");
 //         console.log(e.target.innerText + " Clicked");
 //     }
 // })
-// parent.forEach(btn2=>{
-//     btn2.addEventListener("click",()=>{
-//         console.log(btn2.innerText);
-//     })
-// })
+parent.forEach(btn2=>{
+    btn2.addEventListener("click",()=>{
+        console.log(btn2.innerText);
+    })
+})
