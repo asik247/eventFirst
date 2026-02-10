@@ -162,8 +162,16 @@ sectionMian.addEventListener("click",()=>{
 let delete25 = document.getElementById("delete25");
 let card = document.getElementById("card");
 delete25.addEventListener("click",function(e){
-    e.stopPropagation()
+    e.stopImmediatePropagation()
     console.log("Item deleted");
+})
+delete25.addEventListener("click",function(){
+    // e.stopPropagation()
+    console.log("Item deleted2");
+})
+delete25.addEventListener("click",function(){
+    // e.stopPropagation()
+    console.log("Item deleted3");
 })
 card.addEventListener("click",function(){
     console.log("card opened");
