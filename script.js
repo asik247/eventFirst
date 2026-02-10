@@ -139,3 +139,16 @@ deleteBtn2.addEventListener("click", () => {
     let inputFeild = document.getElementById("inputFeild");
     inputFeild.value = '';
 })
+// main code here now:
+let main = document.getElementById("main");
+let child = document.getElementById("child");
+let btn = document.getElementById("btn");
+main.addEventListener("click",()=>{
+    console.log("main clicked");
+})
+child.addEventListener("click",()=>{
+    console.log("child btn clicked");
+})
+btn.addEventListener("click",()=>{
+    console.log(" btn clicked");
+})
