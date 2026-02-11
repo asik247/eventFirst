@@ -210,3 +210,4 @@ bubbleBtn.addEventListener("click",(e)=>{
 bubble2.addEventListener("click",()=>{
     console.log("bubble2 Div clicked now");
 })
+console.log("js update");
