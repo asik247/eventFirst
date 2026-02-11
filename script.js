@@ -178,14 +178,35 @@ card.addEventListener("click",function(){
 })
 // Task for give me chatgtp:
 let parent = document.getElementById("parent");
-// parent.addEventListener("click",function(e){
-//     console.log(e.target);
-//     if(e.target.tagName === "BUTTON"){
-//         console.log(e.target.innerText + " Clicked");
-//     }
+parent.addEventListener("click",function(e){
+    console.log(e.target);
+    if(e.target.tagName === "BUTTON"){
+        console.log(e.target.innerText + " Clicked");
+    }
+})
+// parent.forEach(btn2=>{
+//     btn2.addEventListener("click",()=>{
+//         console.log(btn2.innerText);
+//     })
 // })
-parent.forEach(btn2=>{
-    btn2.addEventListener("click",()=>{
-        console.log(btn2.innerText);
-    })
+
+// bubble code now;
+let bubbleBtn = document.getElementById("bubbleBtn");
+let bubble2 = document.getElementById("bubble2");
+bubbleBtn.addEventListener("click",(e)=>{
+    // console.log("bbl btn clicked");
+    // e.stopPropagation();
+    // e.stopImmediatePropagation()
+    console.log("This is bubble btn clicked now");
+})
+bubbleBtn.addEventListener("click",(e)=>{
+    // console.log("bbl btn clicked");
+    console.log("This is bubble2 btn clicked now");
+})
+bubbleBtn.addEventListener("click",(e)=>{
+    // console.log("bbl btn clicked");
+    console.log("This is bubble3 btn clicked now");
+})
+bubble2.addEventListener("click",()=>{
+    console.log("bubble2 Div clicked now");
 })
